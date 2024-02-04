@@ -34,19 +34,20 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-    export FOX_AB_DEVICE=1
-    export FOX_PORTS_TMP="/workspace/platform_manifest_twrp_aosp/ofr"
-    export FOX_PORTS_INSTALLER="/workspace/platform_manifest_twrp_aosp/temp"
-    export OF_MAINTAINER="Deekshith SH"
-    export FOX_VERSION="12.1-Beta"
-    export OF_ALLOW_DISABLE_NAVBAR=0
-    export FOX_VANILLA_BUILD=1
-    # export OF_DEVICE_WITHOUT_PERSIST=1
-    export FOX_USE_NANO_EDITOR=1
-    export OF_FORCE_PREBUILT_KERNEL=1
-    export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
-    # export OF_DEFAULT_TIMEZONE=""
-    export ALLOW_MISSING_DEPENDENCIES=true
+   export LC_ALL="C"
+   export FOX_AB_DEVICE=1
+   export FOX_PORTS_TMP="/workspace/platform_manifest_twrp_aosp/ofr"
+   export FOX_PORTS_INSTALLER="/workspace/platform_manifest_twrp_aosp/temp"
+   export OF_MAINTAINER="Deekshith SH"
+   export FOX_VERSION="12.1-Beta"
+   export OF_ALLOW_DISABLE_NAVBAR=0
+   export FOX_VANILLA_BUILD=1
+   # export OF_DEVICE_WITHOUT_PERSIST=1
+   export FOX_USE_NANO_EDITOR=1
+   export OF_FORCE_PREBUILT_KERNEL=1
+   export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
+   # export OF_DEFAULT_TIMEZONE=""
+   export ALLOW_MISSING_DEPENDENCIES=true
 
 
 	# try to prevent potential data format errors
@@ -59,6 +60,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# export OF_STATUS_INDENT_RIGHT=48
   	# export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
+   export TARGET_SCREEN_WIDTH=720
+   export TARGET_SCREEN_HEIGHT=1600
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
