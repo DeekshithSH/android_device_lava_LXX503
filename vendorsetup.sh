@@ -48,6 +48,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
    # export OF_DEFAULT_TIMEZONE=""
    export ALLOW_MISSING_DEPENDENCIES=true
+   export FOX_VIRTUAL_AB_DEVICE=1
 
 
 	# try to prevent potential data format errors

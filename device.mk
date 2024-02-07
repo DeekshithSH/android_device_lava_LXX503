@@ -7,6 +7,7 @@
 
 LOCAL_PATH := device/lava/LXX503
 # A/B
+ENABLE_VIRTUAL_AB := true
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
