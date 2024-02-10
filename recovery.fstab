@@ -48,5 +48,5 @@ auto                      vfat     /devices/platform/mt_usb*            flags=di
 /vbmeta                   emmc     /dev/block/by-name/vbmeta            flags=display=vbmeta
 
 # External SDCard and OTG
-/external_sd              auto     /devices/platform/externdevice       flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
-/usg_otg                  auto     /devices/platform/mt_usb*            flags=display="MicroSD";storage;wipeingui;removable
+/external_sd              auto     /devices/platform/externdevice       flags=display="MicroSD";storage;wipeingui;removable
+/usg_otg                  auto     /devices/platform/mt_usb*            flags=fsflags=utf8;display="USB-Storage";storage;wipeingui;removable
