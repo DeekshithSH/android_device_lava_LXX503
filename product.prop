@@ -1,0 +1,12 @@
+ro.com.android.mobiledata=false
+ro.com.google.acsa=true
+ro.com.google.clientidbase=android-lava
+ro.com.google.gmsversion=13_202304
+ro.odm.pri_ram_expansion_posi=1
+ro.odm.ram_expansion_array2=1
+ro.odm.ram_expansion_array3=1
+ro.opa.eligible_device=true
+ro.product.ab_ota_partitions=boot,system,vendor
+ro.setupwizard.rotation_locked=true
+setupwizard.theme=glif_v3_light
+vendor.audiohal.telephonytx.type=2
