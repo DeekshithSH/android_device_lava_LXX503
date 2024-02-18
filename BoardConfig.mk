@@ -8,7 +8,13 @@ DEVICE_PATH := device/lava/LXX503
 
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
+AB_OTA_PARTITIONS += \
+    system \
+    vendor \
+    product \
+    boot \
+    vbmeta_vendor \
+    vbmeta_system
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
