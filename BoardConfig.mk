@@ -82,7 +82,8 @@ BOARD_SUPER_PARTITION_GROUPS := lava_dynamic_partitions
 BOARD_LAVA_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     vendor \
-    product \
+    product
+
 BOARD_LAVA_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
